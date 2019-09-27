@@ -1,253 +1,296 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Glenn Hitchcock</title>
-		<meta content="width=device-width,initial-scale=1" name="viewport">
-		<meta name="description" content="Designer. Crafting shiny things for the web &amp; mobile world.">
-		<style>
-			@font-face {
-			  font-family: 'Inter';
-			  font-style:  normal;
-			  font-weight: 400;
-			  font-display: swap;
-			  src: url("fonts/Inter-Regular.woff2") format("woff2"),
-			       url("fonts/Inter-Regular.woff") format("woff");
-			}
-			
-			@font-face {
-			  font-family: 'Inter';
-			  font-style:  normal;
-			  font-weight: 500;
-			  font-display: swap;
-			  src: url("fonts/Inter-Medium.woff2") format("woff2"),
-			       url("fonts/Inter-Medium.woff") format("woff");
-			}
-			
-			html, body { 
-				height: 100%;
-			}
-			
-			html, body, h1, h2, img, p, ul, li {
-				margin: 0;
-				padding: 0;
-			}
-			
-			body {
-				background-color: #faf8f5;
-				color: #20272b;
-				font: 16px 'Inter', system-ui, sans-serif;
-				font-weight: 400;
-				-webkit-font-smoothing: antialiased;
-				display: flex;
-				flex-direction: row;
-			}
-			
-			header, summary, aside {
-				flex: 1 1 0;
-				padding: 72px;
-				box-sizing: border-box;
-				min-height: 100%;
-			}
-			
-			header {
-				background-color: white;
-			}
-			
-			img {
-				width: 128px;
-				height: 128px;
-				margin-left: -24px;
-				margin-top: -24px;
-				margin-bottom: 24px;
-			}
-			
-			h1 {
-				font-size: 32px;
-				line-height: 48px;
-				font-weight: 500;
-				margin-bottom: 32px;
-			}
-			
-			h2 {
-				font-weight: 400;
-				margin-top: 148px;
-				margin-bottom: 42px;
-			}
-			
-			#present {
-				font-size: 20px;
-				line-height: 32px;
-				margin-bottom: 32px;
-			}
-			
-			#past, h2, li {
-				font-size: 16px;
-				line-height: 26px;
-			}
-			
-			#past, h2, span 
-			{
-				color: #6a6e71;
-			}
-			
-			a {
-				text-decoration: none;
-				color: #20272b;
-			}
-			
-			#present a {
-				color: #f6dea4;
-				font-weight: 500;
-				background-color: #20272b;
-				text-shadow: #63676e 0 -1px 2px;
-				text-shadow: black 0 1px 2px;				
-				padding: 4px 6px 4px 6px;
-			}
-						
-			#past a::after {
-				content: " ↪";			
-				color: #ae0000;
-			}		
-			
-			summary {
-				border-right: 1px solid #eeece9;
-			}
-			
-			ul {
-				list-style: none;
-			}	
-			
-			li {
-				margin-bottom: 20px;
-			}
-			
-			li a::after {
-				content: "  ↪"
-			}
-			
-			li:last-child {
-				margin-bottom: 0px;
-			}
-						
-			a#instagram::after {
-				color: #d90090;
-			}				
-						
-			a#spotify::after {
-				color: #00dd4d;
-			}		
-			
-			a#twitter::after {
-				color: #00a1f8;
-			}		
-			
-			a#dribbble::after {
-				color: #ea4c89;
-			}		
-			
-			a#resume::after {
-				color: #e6c475;
-			}																	
-			@media only screen and (max-width : 1290px) {
-				img {
-					width: 96px;
-					height: 96px;
-					margin-left: -16px;
-					margin-top: -16px;
-				}
-				
-				header, summary, aside {
-					padding: 40px;
-				}
-				
-				h1 {
-					font-size: 20px;
-					line-height: 30px;
-					margin-bottom: 24px;
-				}
-				
-				h2 {
-					margin-top: 113px;
-					margin-bottom: 24px;
-				}				
-				#present {
-					font-size: 16px;
-					line-height: 26px;
-				}				
-				
-				#past, h2, li {
-					font-size: 14px;
-					line-height: 24px;
-				}
-			}
-						
-			@media only screen and (max-width : 720px) {
-				body { 
-					flex-direction: column; 
-				}
-					
-						
-				header, summary, aside {
-					min-height: auto;
-				}
-				
-				h2 {
-					margin-top: 0;
-				}
-				
-				summary {
-					border-right: 0px;
-					border-bottom: 1px solid #eeece9;					
-				}				
-			}
-						
-		</style>
-	</head>
-	<body>
-		<header>
-			<a href="/">
-				<img src="files/emblem.png" />
-			</a>
-			<h1>Glenn Hitchcock</h1>
-			<p id="present">A product designer living in the UK, working on bettering designers’ tools with <a href="http://www.sketch.com">Sketch.</a></p>
-			<p id="past">Previously Principal Designer at <a href="http://www.fueled.com">Fueled</a>, where I helped build and lead a design team, and design many things for a decade.</p>
-		</header>
-		<summary>
-			<h2>I've worked with</h2>
-			<ul>
-				<li>Harvard University <span>— Product Design</span></li>
-				<li>Barneys New York <span>— Product Design</span></li>
-				<li>Game of Thrones <span>— Design Ideation</span></li>
-				<li>MGM Resorts <span>— Design Systems</span></li>
-				<li>Crunchbase <span>— Product Design</span></li>
-				<li>Compass <span>— Product Design</span></li>
-				<li>Rite Aid <span>— Design Ideation</span></li>
-				<li>9GAG <span>— Product Design</span></li>
-				<li>Rdio <span>— Product Design</span></li>
-				<li>Plug <span>— Side Project</span></li>
-			</ul>
-		</summary>
-		<aside>
-			<h2>Here I am</h2>
-			<ul>
-				<li><a id="instagram" href="http://instagram.com/glennui">Instagram <span>@glennui</span></a></li>
-				<li><a id="spotify" href="https://open.spotify.com/user/glennui">Spotify <span>@glennui</span></a></li>
-				<li><a id="twitter" href="http://twitter.com/glennui">Twitter <span>@glennui</span></a></li>
-				<li><a id="dribbble" href="http://dribbble.com/glenn">Dribbble <span>@glenn</span></a></li>
-				<li><a id="resume" href="files/glennhitchcockresume.pdf">Résumé <span>.pdf</span></a></li>
 
-			</ul>
-		</aside>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+  <meta charset="utf-8">
+  <title>Glenn Hitchcock</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Designer. Crafting shiny things for the web &amp; mobile world.">
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("fonts/Inter-Regular.woff2") format("woff2"),
+      url("fonts/Inter-Regular.woff") format("woff");
+    }
 
-			ga('create', 'UA-22319807-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url("fonts/Inter-Medium.woff2") format("woff2"),
+      url("fonts/Inter-Medium.woff") format("woff");
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    html,
+    body,
+    h1,
+    h2,
+    img,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #faf8f5;
+      color: #20272b;
+      font: 16px 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header,
+    summary,
+    aside {
+      flex: 1 1 0;
+      padding: 72px;
+      box-sizing: border-box;
+      min-height: 100%;
+    }
+
+    header {
+      background-color: white;
+    }
+
+    img {
+      width: 128px;
+      height: 128px;
+      margin-left: -24px;
+      margin-top: -24px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-weight: 400;
+      margin-top: 148px;
+      margin-bottom: 42px;
+    }
+
+    #present {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+
+    #past,
+    h2,
+    li {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    #past,
+    h2,
+    span {
+      color: #6a6e71;
+    }
+
+    a {
+      text-decoration: none;
+      color: #20272b;
+    }
+
+    #present a {
+      color: #f6dea4;
+      font-weight: 500;
+      background-color: #20272b;
+      text-shadow: #63676e 0 -1px 2px;
+      text-shadow: black 0 1px 2px;
+      padding: 4px 6px 4px 6px;
+    }
+
+    #past a::after {
+      content: " ↪";
+      color: #ae0000;
+    }
+    
+    main {
+      display: flex;
+      flex-direction: row;
+      max-width: 1440px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    
+    header {
+      border-left: 50vw solid white;
+      margin-left: -50vw;
+    }
+
+    summary {
+      border-right: 1px solid #eeece9;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    li a::after {
+      content: "  ↪"
+    }
+
+    li:last-child {
+      margin-bottom: 0px;
+    }
+
+    a#instagram::after {
+      color: #d90090;
+    }
+
+    a#spotify::after {
+      color: #00dd4d;
+    }
+
+    a#twitter::after {
+      color: #00a1f8;
+    }
+
+    a#dribbble::after {
+      color: #ea4c89;
+    }
+
+    a#resume::after {
+      color: #e6c475;
+    }
+
+    @media only screen and (max-width: 1290px) {
+      img {
+        width: 96px;
+        height: 96px;
+        margin-left: -16px;
+        margin-top: -16px;
+      }
+
+      header,
+      summary,
+      aside {
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        margin-top: 113px;
+        margin-bottom: 24px;
+      }
+      
+      #present {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      #past,
+      h2,
+      li {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    @media only screen and (max-width: 720px) {
+      main {
+        flex-direction: column;
+      }
+
+
+      header,
+      summary,
+      aside {
+        min-height: auto;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      summary {
+        border-right: 0px;
+        border-bottom: 1px solid #eeece9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <a href="/">
+		<img src="files/emblem.png" />
+      </a>
+      <h1>Glenn Hitchcock</h1>
+      <p id="present">A product designer living in the UK, working on bettering designers’ tools with <a href="http://www.sketch.com">Sketch.</a></p>
+      <p id="past">Previously Principal Designer at <a href="http://www.fueled.com">Fueled</a>, where I helped build and lead a design team, and design many things for a decade.</p>
+    </header>
+    <summary>
+      <h2>I've worked with</h2>
+      <ul>
+        <li>Harvard University <span>— Product Design</span></li>
+        <li>Barneys New York <span>— Product Design</span></li>
+        <li>Game of Thrones <span>— Design Ideation</span></li>
+        <li>MGM Resorts <span>— Design Systems</span></li>
+        <li>Crunchbase <span>— Product Design</span></li>
+        <li>Compass <span>— Product Design</span></li>
+        <li>Rite Aid <span>— Design Ideation</span></li>
+        <li>9GAG <span>— Product Design</span></li>
+        <li>Rdio <span>— Product Design</span></li>
+        <li>Plug <span>— Side Project</span></li>
+      </ul>
+    </summary>
+    <aside>
+      <h2>Here I am</h2>
+      <ul>
+        <li><a id="instagram" href="http://instagram.com/glennui">Instagram <span>@glennui</span></a></li>
+        <li><a id="spotify" href="https://open.spotify.com/user/glennui">Spotify <span>@glennui</span></a></li>
+        <li><a id="twitter" href="http://twitter.com/glennui">Twitter <span>@glennui</span></a></li>
+        <li><a id="dribbble" href="http://dribbble.com/glenn">Dribbble <span>@glenn</span></a></li>
+        <li><a id="resume" href="files/glennhitchcockresume.pdf">Résumé <span>.pdf</span></a></li>
+
+      </ul>
+    </aside>
+  </main>
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-22319807-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
 </html>
-
